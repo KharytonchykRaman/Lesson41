@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 
-	int aNum = 10;
+	int aNum = 5;
 	int aNum2 = 20;
 	int aNum3 = 30;
 	float bNum;
@@ -43,7 +43,10 @@ int main() {
 	piNum += 1;
 	cout << "Address before sum : " << piNum << endl;
 
-	cout << "Address num2 "<< &aNum << endl;
+	int* piNum2 = &aNum2;
+	cout << "Value of pointer before : " << *piNum2 << endl;
+	piNum2 += 1;
+	cout << "Value of pointer after : " << *piNum2 << endl;
 
 	return 0;
 }
